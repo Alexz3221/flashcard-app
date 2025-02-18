@@ -2,71 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* General Page Styling */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 20px;
+  background: #121212; /* Dark mode background */
+  color: white;
+  line-height: 1.6;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: center;
+  /* align-items: center; */
+  align-items: flex-start;   /* This places content at the top */
   min-height: 100vh;
+  margin-top: 20px;  
+  text-align: center;
 }
 
+/* Header */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: #ffcc00;
+  font-size: 2rem;
+  text-align: center;
 }
 
-button {
+/* Interview Section */
+section {
+  background: #1e1e1e;
+  padding: 20px;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  border: 1px solid #444;
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+button {
+  background: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: border-color 0.25s;
+  font-size: 16px;
+  margin: 10px 5px;
+  transition: all 0.3s ease-in-out;
 }
 button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background: #e6b800;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Text Areas */
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #777;
+  border-radius: 4px;
+  background: #333;
+  color: white;
 }
